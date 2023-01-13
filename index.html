@@ -13,29 +13,22 @@
     />
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Main -->
     <main class="main">
       <!-- Header -->
       <header class="header">
-        <img src="/images/logo.svg" alt="Snap Logo" class="header-logo" />
-        <img
-          src="/images/icon-menu.svg"
-          alt="Icon Open Menu"
-          class="header-open"
-        />
+        <div class="header-wrapper">
+          <img src="/images/logo.svg" alt="Snap Logo" class="header-logo" />
+          <img
+            src="/images/icon-menu.svg"
+            alt="Icon Open Menu"
+            class="header-open"
+          />
+        </div>
+
         <!-- Navbar -->
         <nav class="nav">
           <ul class="nav-list">
@@ -96,14 +89,18 @@
       <article class="article">
         <!-- Article Main section -->
         <section class="article-hero">
-          <img src="/images/image-hero-mobile.png" alt="Image Hero" />
+          <img
+            src="/images/image-hero-mobile.png"
+            alt="Image Hero"
+            class="article-hero-img"
+          />
           <div class="article-wrapper">
             <h1 class="article-wrapper-title">Make remote work</h1>
             <p class="article-wrapper-paragraph">
               Get your team in sync, no matter your location. Streamline
               processes, create team rituals, and watch productivity soar.
             </p>
-            <a href="#" class="article-wrapper-link">Learn more</a>
+            <a href="#" class="article-wrapper-btn">Learn more</a>
           </div>
         </section>
         <!-- Article Sponsor Companies -->
