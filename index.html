@@ -26,16 +26,18 @@
             src="/images/icon-menu.svg"
             alt="Icon Open Menu"
             class="header-open"
+            onclick="menuToggle(this);"
           />
         </div>
 
         <!-- Navbar -->
-        <div class="nav-wrapper">
+        <div class="nav-wrapper hidden">
           <nav class="nav">
             <img
               src="/images/icon-close-menu.svg"
               alt="Close Menu"
               class="nav-wrapper-close"
+              onclick="menuToggle(this);"
             />
             <ul class="nav-list">
               <li class="nav-item">
@@ -43,9 +45,16 @@
                 <img
                   src="/images/icon-arrow-down.svg"
                   alt="Features nav list"
+                  class="nav-icon-down features-icon-down"
+                  onclick="iconToggle(this)"
                 />
-                <img src="/images/icon-arrow-up.svg" alt="Features nav list" />
-                <ul class="sub-nav-list">
+                <img
+                  src="/images/icon-arrow-up.svg"
+                  alt="Features nav list"
+                  class="nav-icon-up hidden features-icon-up"
+                  onclick="iconToggle(this)"
+                />
+                <ul class="sub-nav-list hidden features-list">
                   <li class="sub-nav-item">
                     <img src="/images/icon-todo.svg" alt="Todo list" />
                     <a href="#" class="nav-link"> Todo List </a>
@@ -66,12 +75,19 @@
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">Company</a>
-                <img src="/images/icon-arrow-up.svg" alt="Features nav list" />
+                <img
+                  src="/images/icon-arrow-up.svg"
+                  alt="Features nav list"
+                  class="nav-icon-up hidden company-icon-up"
+                  onclick="iconToggle(this)"
+                />
                 <img
                   src="/images/icon-arrow-down.svg"
                   alt="Features nav list"
+                  class="nav-icon-down company-icon-down"
+                  onclick="iconToggle(this)"
                 />
-                <ul class="sub-nav-list">
+                <ul class="sub-nav-list hidden company-list">
                   <li class="sub-nav-item">
                     <a href="#" class="nav-link"> History </a>
                   </li>
@@ -127,5 +143,6 @@
         </section>
       </article>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
