@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [HERE](https://github.com/yassineboukhla/intro-section-with-dropdown)
+- Live Site URL: [HERE](https://yassineboukhla.github.io/intro-section-with-dropdown/)
 
 ## My process
 
@@ -34,10 +34,12 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
+
+- It was a headache for me since it's my first time to do a mobile first workflow or 2nd time if I remember. So, It was hard to make the header responsible for
+  mobile & desktop at the same time. But at the end i managed to do it.
 
 ## Author
 
