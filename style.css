@@ -165,13 +165,14 @@ body {
 .main {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 /*
 *********** Header Styling
 */
 .header {
-  width: 100%;
+  max-width: 100%;
   margin-block-end: 20px;
 }
 .header-open {
@@ -363,56 +364,61 @@ body {
 
 @media screen and (min-width: 1033px) {
   .header {
+    width: 100%;
     display: flex;
-    /* gap: 100px; */
-    align-items: center;
+    flex-direction: row;
+    margin-block: 20px;
+    height: auto;
     justify-content: space-evenly;
   }
-
   .header-wrapper {
-    display: flex;
-    /* justify-content: space-between; */
-    /* padding: 20px 10px; */
-    align-items: center;
-  }
-  .header-logo {
-    /* margin-left: 200px; */
-  }
-  .nav-wrapper {
-    display: inline;
-    position: inherit;
-  }
-  .nav {
-    display: flex;
-    width: 100%;
-    background-color: transparent;
-    order: inherit;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .nav-wrapper-close {
-    display: none;
+    justify-content: flex-start;
+    padding: 0;
   }
   .header-open {
     display: none;
   }
+  .nav-wrapper {
+    position: static;
+    height: 0%;
+    width: auto;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-wrapper-close {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+  }
   .nav-list {
-    margin-top: 0;
-    margin-left: 0;
-    margin-block-end: 0;
     flex-direction: row;
-    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0;
+    gap: 65px;
   }
   .auth {
     flex-direction: row;
-  }
-  .overlay {
-    background-color: transparent;
-    width: 0;
+    width: auto;
+    height: auto;
   }
   .sub-nav-list {
-    position: absolute;
+    flex-direction: column;
+    margin-block-start: 10px;
+    gap: 10px;
+    margin-left: 10px;
+    position: fixed;
     background-color: white;
-    padding: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 19px -10px;
   }
 }
